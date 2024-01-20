@@ -5,7 +5,7 @@ Nuestro objetivo en esta tarea de equipo es mejorar la aplicación que hemos rea
 
 REQUISITO	PUNTUACIÓN 
 Cambiar el icono genérico de la app por otro de tu elección.
-
+a
 0,5
 Pantalla inicial de Splash que de paso al login/registro con FireBase Authentication.
 
