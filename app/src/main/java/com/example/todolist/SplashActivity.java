@@ -1,8 +1,7 @@
-package com.grupo13.todolist;
+package com.example.todolist;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.todolist.R;
 import com.mikhaellopez.circularfillableloaders.CircularFillableLoaders;
 import android.content.Intent;
 import android.os.Bundle;

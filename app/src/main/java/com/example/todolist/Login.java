@@ -74,7 +74,7 @@ public class Login extends AppCompatActivity {
                                         //If sign in fails, display a message to the user.
                                             MediaPlayer mediaPlayer = MediaPlayer.create(Login.this, audio_error);
                                             mediaPlayer.start();
-                                        Toast.makeText(Login.this, "La autentificación a fallado", Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(Login.this, "No se ha podido crear el usuario", Toast.LENGTH_SHORT).show();
                                     }
                                 }
                             });
@@ -107,7 +107,7 @@ public class Login extends AppCompatActivity {
                                     //If sign in fails, display a message to the user.
                                         MediaPlayer mediaPlayer = MediaPlayer.create(Login.this, R.raw.audio_error);
                                         mediaPlayer.start();
-                                    Toast.makeText(Login.this, "Authentication failed.", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(Login.this, "No existe el usuario", Toast.LENGTH_SHORT).show();
                                 }
                             }
                         });

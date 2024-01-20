@@ -12,13 +12,13 @@
     <item
         android:id="@+id/mas"
         android:title="@string/mas"
-        android:icon="@mipmap/mas"
+        android:icon="@drawable/mas"
         app:showAsAction="ifRoom"
         />
     <item
         android:id="@+id/logout"
         android:title="@string/logout"
-        android:icon="@mipmap/logout"
+        android:icon="@drawable/logout"
         app:showAsAction="ifRoom"
         />
 </menu>

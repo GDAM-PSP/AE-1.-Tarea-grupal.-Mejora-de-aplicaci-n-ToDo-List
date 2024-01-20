@@ -1,4 +1,4 @@
-package com.grupo13.todolist;
+package com.example.todolist;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -18,7 +18,6 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.todolist.R;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
@@ -97,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
                                                     MediaPlayer mediaPlayer = MediaPlayer.create(MainActivity.this, R.raw.pencil_check);
                                                     mediaPlayer.start();
                                                 }
-                                                Toast.makeText(MainActivity.this,"Tarea añadida",Toast.LENGTH_SHORT).show();
+                                                Toast.makeText(MainActivity.this,"Tarea creada",Toast.LENGTH_SHORT).show();
                                                 return;
                                             }
                                         })
@@ -108,7 +107,7 @@ public class MainActivity extends AppCompatActivity {
                                                     MediaPlayer mediaPlayer = MediaPlayer.create(MainActivity.this, R.raw.audio_error);
                                                     mediaPlayer.start();
                                                 }
-                                                Toast.makeText(MainActivity.this,"Fallo al crear la tarea",Toast.LENGTH_SHORT).show();
+                                                Toast.makeText(MainActivity.this,"No se pudo crear la tarea",Toast.LENGTH_SHORT).show();
                                             }
                                         });
 

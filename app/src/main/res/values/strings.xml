@@ -5,4 +5,10 @@
     <string name="mas">Mas</string>
     <string name="logout">Logout</string>
     <string name="sonido">sonido</string>
+    <string name="edit_btn">Edit</string>
+    <string name="done_btn">Done</string>
+    <string name="mis_tareas">Mis Tareas</string>
+    <string name="login">Login</string>
+    <string name="crear">Crea una cuenta</string>
+    <string name="tarea">Tarea</string>
 </resources>
