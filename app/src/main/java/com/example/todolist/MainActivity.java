@@ -5,14 +5,10 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.support.v4.app.INotificationSideChannel;
-import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -25,7 +21,6 @@ import android.widget.Toast;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.core.Tag;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -37,7 +32,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
@@ -102,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
                                                     MediaPlayer mediaPlayer = MediaPlayer.create(MainActivity.this, R.raw.pencil_check);
                                                     mediaPlayer.start();
                                                 }
-                                                Toast.makeText(MainActivity.this,"Tarea añadida",Toast.LENGTH_SHORT).show();
+                                                Toast.makeText(MainActivity.this,"Tarea creada",Toast.LENGTH_SHORT).show();
                                                 return;
                                             }
                                         })
@@ -113,7 +107,7 @@ public class MainActivity extends AppCompatActivity {
                                                     MediaPlayer mediaPlayer = MediaPlayer.create(MainActivity.this, R.raw.audio_error);
                                                     mediaPlayer.start();
                                                 }
-                                                Toast.makeText(MainActivity.this,"Fallo al crear la tarea",Toast.LENGTH_SHORT).show();
+                                                Toast.makeText(MainActivity.this,"No se pudo crear la tarea",Toast.LENGTH_SHORT).show();
                                             }
                                         });
 

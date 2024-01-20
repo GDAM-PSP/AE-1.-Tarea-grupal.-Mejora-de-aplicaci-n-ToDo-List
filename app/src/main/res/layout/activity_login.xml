@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="132dp"
-        android:text="Mis Tareas"
+        android:text="@string/mis_tareas"
         android:textColor="@color/rojo"
         android:textSize="57sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -75,7 +75,6 @@
             android:textColor="@color/black"
             android:textColorHint="@color/black"
             tools:ignore="DuplicateIds" />
-        <requestFocus/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
@@ -83,8 +82,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="73dp"
-        android:text="Login"
-        android:textSize="20dp"
+        android:text="@string/login"
+        android:textSize="20sp"
         android:backgroundTint="@color/rojo"
         android:width="288dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -96,10 +95,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="Crea una cuenta"
+        android:text="@string/crear"
         android:textColor="@color/rojo"
         android:textStyle="bold"
-        android:textSize="20dp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login" />
