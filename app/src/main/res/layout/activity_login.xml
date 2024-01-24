@@ -4,16 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login">
-
+    tools:context="Login"
+    android:id="@+id/mainlogin"
+    >
+    <!--android:id="@+id/mainlogin"-->
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="132dp"
+        android:fontFamily="@font/goaround"
         android:text="@string/mis_tareas"
         android:textColor="@color/rojo"
-        android:textSize="57sp"
+        android:textSize="50sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -63,6 +66,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:boxStrokeColor="@color/rojo"
         app:hintTextColor="@color/rojo"
+        app:passwordToggleEnabled="true"
+        app:errorEnabled="true"
+        app:errorIconDrawable="@null"
         app:layout_constraintTop_toBottomOf="@+id/cajaEmail">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -81,25 +87,53 @@
         android:id="@+id/login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="73dp"
+        android:layout_marginTop="44dp"
+        android:width="288dp"
+        android:backgroundTint="@color/rojo"
         android:text="@string/login"
         android:textSize="20sp"
-        android:backgroundTint="@color/rojo"
-        android:width="288dp"
+        app:icon="@drawable/user"
+        app:iconGravity="textStart"
+        app:iconPadding="0sp"
+        app:iconSize="16dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cajaPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/cajaPassword"
+        tools:ignore="RtlHardcoded" />
 
     <TextView
         android:id="@+id/cuentaNueva"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="104dp"
+        android:fontFamily="@font/goaround"
         android:text="@string/crear"
         android:textColor="@color/rojo"
-        android:textStyle="bold"
-        android:textSize="20sp"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login" />
+
+    <Button
+        android:id="@+id/botonHuella"
+        android:layout_width="86dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginBottom="16dp"
+        android:width="288dp"
+        android:backgroundTint="#00F3EFEF"
+        android:contentDescription="Biometria"
+        android:text=""
+        android:textSize="20sp"
+        app:icon="@drawable/huella"
+        app:iconPadding="0sp"
+        app:iconSize="48dp"
+        app:iconTint="#0C0C0C"
+        app:layout_constraintBottom_toTopOf="@+id/cuentaNueva"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="RtlHardcoded" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
