@@ -11,10 +11,9 @@
         android:onClick="cambiarSonido"/>
     <item
         android:id="@+id/mas"
-        android:title="@string/mas"
         android:icon="@drawable/mas"
-        app:showAsAction="ifRoom"
-        />
+        android:title="@string/mas"
+        app:showAsAction="ifRoom" />
     <item
         android:id="@+id/logout"
         android:title="@string/logout"

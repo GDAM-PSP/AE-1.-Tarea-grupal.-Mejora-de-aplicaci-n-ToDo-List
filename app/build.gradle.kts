@@ -45,4 +45,7 @@ dependencies {
     implementation ("com.google.firebase:firebase-firestore")
     implementation ("com.google.firebase:firebase-database")
     implementation ("com.mikhaellopez:circularfillableloaders:1.4.0")
+    implementation("com.airbnb.android:lottie:6.3.0")
+    implementation ("androidx.biometric:biometric-ktx:1.2.0-alpha04")
+    implementation ("androidx.biometric:biometric:1.1.0")
 }
