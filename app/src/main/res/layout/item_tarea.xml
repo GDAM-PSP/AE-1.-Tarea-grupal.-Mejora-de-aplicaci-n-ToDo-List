@@ -24,7 +24,7 @@
 
     <TextView
         android:id="@+id/textViewTarea"
-        android:layout_width="wrap_content"
+        android:layout_width="150sp"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
         android:layout_marginTop="20dp"
@@ -33,7 +33,9 @@
         android:textSize="10sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:ellipsize="end"
+        android:maxLines="1" />
 
     <Button
         android:id="@+id/modificar"
