@@ -11,4 +11,5 @@
     <string name="login">Login</string>
     <string name="crear">Crea una cuenta</string>
     <string name="tarea">Tarea</string>
+    <string name="logo_tareas">Logo tareas</string>
 </resources>
